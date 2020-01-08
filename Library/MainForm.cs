@@ -22,6 +22,7 @@ namespace Library
 
         private void button1_Click(object sender, EventArgs e)
         {
+            //
             dataGridView1.Rows.Clear(); label18.Text = ""; label16.Text = ""; label12.Text = "";
             dataGridView3.Rows.Clear(); label17.Text = ""; label14.Text = ""; label11.Text = "";
             dataGridView4.Rows.Clear(); label15.Text = ""; label13.Text = "";

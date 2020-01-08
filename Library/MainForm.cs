@@ -14,7 +14,9 @@ namespace Library
     
     public partial class MainForm : Form
     {
-        SqlConnection Conn = new SqlConnection(@"Data Source=DESKTOP-KKGIP26\SQLEXPRESS;Initial Catalog=newlibrary;Integrated Security=True");
+        SqlConnection Conn = new SqlConnection(@"Data Source=.\SQLEXPRESS;Initial Catalog=newlibrary;Integrated Security=True");
+        //SqlConnection Conn = new SqlConnection(@"Data Source=DESKTOP-KKGIP26\SQLEXPRESS;Initial Catalog=newlibrary;Integrated Security=True");
+
         public MainForm()
         {
             InitializeComponent();
@@ -211,6 +213,7 @@ namespace Library
 
         private void button2_Click_1(object sender, EventArgs e)
         {
+            //Поиск книги
             dataGridView2.Rows.Clear();
             if (textBox2.Text != "")
             {           

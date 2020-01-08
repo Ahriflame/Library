@@ -13,7 +13,9 @@ namespace Library
 {
     public partial class LoginForm : Form
     {
-        SqlConnection Conn = new SqlConnection(@"Data Source=DESKTOP-KKGIP26\SQLEXPRESS;Initial Catalog=newlibrary;Integrated Security=True");
+        //SqlConnection Conn = new SqlConnection(@"Data Source=DESKTOP-KKGIP26\SQLEXPRESS;Initial Catalog=newlibrary;Integrated Security=True");
+        SqlConnection Conn = new SqlConnection(@"Data Source=.\SQLEXPRESS;Initial Catalog=newlibrary;Integrated Security=True");
+
         public LoginForm()
         {
             InitializeComponent();
